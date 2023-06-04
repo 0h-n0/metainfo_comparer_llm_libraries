@@ -7,7 +7,10 @@ from llama_index.vector_stores import QdrantVectorStore
 from llama_index.tools import QueryEngineTool
 from llama_index.query_engine import RouterQueryEngine
 import qdrant_client
+import dotenv
 
+
+dotenv.load_dotenv()
 
 class BookInfo(BaseModel):
     content_url: str

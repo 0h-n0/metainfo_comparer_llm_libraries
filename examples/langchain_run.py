@@ -11,7 +11,10 @@ from langchain.agents.agent_toolkits import (
     VectorStoreInfo,
 )
 from pydantic import BaseModel
+import dotenv
 
+
+dotenv.load_dotenv()
 
 class BookInfo(BaseModel):
     content_url: str
